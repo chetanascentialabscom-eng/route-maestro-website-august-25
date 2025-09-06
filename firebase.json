@@ -1,0 +1,45 @@
+{
+    "hosting": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+          {
+            "source": "/",
+            "destination": "/index.html"
+          },
+          {
+              "source": "/Home",
+              "destination": "/Home.html"
+          },
+          {
+              "source": "/ai-powered-dynamic-packaging",
+              "destination": "/ai-powered-dynamic-packaging.html"
+          },
+          {
+              "source": "/Pricing",
+              "destination": "/Pricing.html"
+          },
+          {
+              "source": "/schedule-demo",
+              "destination": "/schedule-demo.html"
+          },
+          {
+              "source": "/Privacy",
+              "destination": "/Privacy.html"
+          },
+          {
+              "source": "/terms-conditions",
+              "destination": "/terms-conditions.html"
+          },
+          {
+              "source": "**",
+              "destination": "/index.html"
+            }
+        ]
+    }
+  }
+  
