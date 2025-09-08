@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/routemaestro/home", "destination": "/Home" },
+    { "source": "/routemaestro/privacy", "destination": "/Privacy" },
+    { "source": "/routemaestro/home", "destination": "/Home" }
+ 
+  ]
+}

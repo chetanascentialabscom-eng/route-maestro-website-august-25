@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-...your-hash..."
+      crossorigin="anonymous"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 0; padding: 20px">
+    <div class="d-md-block d-none" style="overflow-x: auto">
+      <table
+        style="
+          width: 100%;
+          max-width: 900px;
+          margin: auto;
+          border-collapse: collapse;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          overflow: hidden;
+        "
+      >
+        <!-- Header Row -->
+        <tr style="background-color: #323268; color: white">
+          <th style="padding: 20px">RouteMaestro Trust</th>
+          <th style="padding: 20px">RouteMaestro Pro</th>
+          <th style="padding: 20px">RouteMaestro Enterprise</th>
+        </tr>
+
+        <!-- Merged Cell Row -->
+        <tr>
+          <!-- Trust Column -->
+          <td style="padding: 16px"><strong>Free</strong><br />(Including 1 User)</td>
+
+          <!-- Pro Column -->
+          <td style="padding: 16px"><strong>₹ 35,000 / Year</strong><br />(Up to 10 Users)</td>
+
+          <!-- Enterprise Column - Merged Cell -->
+          <td rowspan="3" style="padding: 30px; background-color: #f8f8f8; vertical-align: middle">
+            <div style="font-weight: bold; margin-bottom: 8px">Contact Us</div>
+            <div style="font-size: 14px; color: #444; margin-bottom: 12px">
+              Custom Requirements?<br />
+              Need more advanced Features?
+            </div>
+            <button
+              style="
+                background-color: #ff5f57;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+              "
+            >
+              Contact Us
+            </button>
+          </td>
+        </tr>
+
+        <!-- Platform Fee -->
+        <tr>
+          <td style="padding: 16px">Postpaid 2% Platform Fee Per Booking</td>
+          <td style="padding: 16px">Postpaid 2% Platform Fee</td>
+        </tr>
+
+        <!-- Booking Limit -->
+        <tr>
+          <td style="padding: 16px; background-color: #fff">Up to 50 Package Bookings / Month</td>
+          <td style="padding: 16px; background-color: #fff">Unlimited</td>
+        </tr>
+      </table>
+
+      <table
+        style="
+          width: 100%;
+          border-collapse: collapse;
+          max-width: 900px;
+          margin: 40px auto 0;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          font-family: Arial, sans-serif;
+        "
+      >
+        <!-- Section Header -->
+        <tr style="background-color: #323268; color: white">
+          <th style="padding: 12px" colspan="4">Features</th>
+        </tr>
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; text-align: left; width: 25%">Suppliers</th>
+          <th style="padding: 12px; text-align: left; width: 25%">RouteMaestro Trust</th>
+          <th style="padding: 12px; text-align: left; width: 25%">RouteMaestro Pro</th>
+          <th style="padding: 12px; text-align: left; width: 25%">RouteMaestro Enterprise</th>
+        </tr>
+
+        <!-- Features -->
+        <tr>
+          <td style="padding: 10px">Global Flight API</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Global Hotel API</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Global Sightseeing API</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Add Custom APIs</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">Your API Key<br />(Additional Charge)</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">Your API Key<br />(Additional Charge)</td>
+          <td style="padding: 10px; text-align: center; padding: 10px">Custom APIs ✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Offline Contracting & Management Of Suppliers</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">Customized As Per Requirements ✅</td>
+        </tr>
+
+        <!-- Section Header -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; border: 1px solid #ccc" colspan="4">Engine Flows</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Flight Booking Engine</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center" rowspan="4">Customized As Per Requirements ✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Hotel Booking Engine</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Sightseeing Booking Engine</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Package Booking Engine</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+
+        <!-- Payment -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; border: 1px solid #ccc" colspan="4">Payment</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Payment Gateway Integration</td>
+          <td style="padding: 10px; text-align: center">Default Payment Gateway ✅</td>
+          <td style="padding: 10px; text-align: center">Default Payment Gateway ✅</td>
+          <td style="padding: 10px; text-align: center">Custom Payment Gateway Of Your Choice</td>
+        </tr>
+
+        <!-- Dashboard & Back Office -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px" colspan="4">Dashboard & Back Office</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">General Dashboard KPIs</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center" rowspan="7">Customized As Per Requirements ✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">B2C / B2C User Management</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <!-- <td style="padding: 10px; text-align: center" rowspan="6">Customized As Per Requirements ✅</td> -->
+        </tr>
+        <tr>
+          <td style="padding: 10px">Enquiry Management</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Staff Management</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Task Management</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Booking Ledger</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Sales Ledger</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Add & Manage Other Services</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+
+        <!-- Custom Text -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; border: 1px solid #ccc" colspan="4">Custom Text With Vouchers</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Traveler Mobile App</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">Customized As Per Requirements ✅</td>
+        </tr>
+
+        <!-- Communication With User -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; border: 1px solid #ccc" colspan="4">Communication With User</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Email, WhatsApp Quotation Sharing</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center" rowspan="5">Customized As Per Requirements ✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Flight Dynamic Quotations (PDF, e-Link)</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Hotel Dynamic Quotations (PDF, e-Link)</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Sightseeing Dynamic Quotations (PDF, e-Link)</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Packages Dynamic Quotations (PDF, e-Link)</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+
+        <!-- Whitelabel -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px; border: 1px solid #ccc" colspan="4">Whitelabel Management</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">1 Whitelabel B2B or B2C Website</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">1 Whitelabel B2B or B2C Back Office</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Booking Queue</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Transaction Queue</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center" rowspan="4">Customized As Per Requirements ✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Whitelabel Voucher Generation</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Discount Code Management</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">B2C or B2B User Area</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+        </tr>
+
+        <!-- Financial Module -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px" colspan="4">Financial Module</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Micro Level Creation & Management Of Mark Up, Cancellation</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Invoice Ledger</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Custom Text With Invoice</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+
+        <!-- Customer Support -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px" colspan="4">Customer Support</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Ticket Management</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">AI Chatbot Support</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Account Manager Support</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+
+        <!-- Technological Support -->
+        <tr style="background-color: grey; color: white">
+          <th style="padding: 12px" colspan="4">Technological Support</th>
+        </tr>
+
+        <tr>
+          <td style="padding: 10px">Secure Server</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">Unlimited Cloud Capacity For Each Client</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">24 Hours Maintenance</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">System Status Updates</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px">New Version Updates</td>
+          <td style="padding: 10px; text-align: center">❌</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+          <td style="padding: 10px; text-align: center">✅</td>
+        </tr>
+      </table>
+    </div>
+    <div class="d-block d-md-none">
+      <div style="max-width: 900px; margin: auto; padding: 10px">
+        <!-- Tab Buttons (Mobile Only) -->
+        <div id="tab-buttons" style="display: none; margin-bottom: 16px; display: flex; gap: 8px">
+          <button
+            onclick="showTab(0)"
+            style="
+              flex: 1;
+              padding: 12px;
+              font-weight: bold;
+              border-radius: 8px;
+              background-color: #323268;
+              color: white;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            RouteMaestro Trust
+          </button>
+          <button
+            onclick="showTab(1)"
+            style="
+              flex: 1;
+              padding: 12px;
+              font-weight: bold;
+              border-radius: 8px;
+              background-color: #eee;
+              color: #333;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            RouteMaestro Pro
+          </button>
+          <button
+            onclick="showTab(2)"
+            style="
+              flex: 1;
+              padding: 12px;
+              font-weight: bold;
+              border-radius: 8px;
+              background-color: #eee;
+              color: #333;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            RouteMaestro Enterprise
+          </button>
+        </div>
+
+        <!-- Mobile Tab Contents (Hidden on Desktop) -->
+        <div id="mobile-tabs" style="display: none">
+          <!-- Trust -->
+          <div style="display: block">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <tr>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Trust</th>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Flight API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Hotel API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Sightseeing API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Add Custom APIs</td>
+                <td style="padding: 12px">Your API Key<br />(Additional Charge)</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Offline Contracting</td>
+                <td style="padding: 12px">❌</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Pro -->
+          <div style="display: none">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <tr>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Pro</th>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Flight API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Hotel API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Sightseeing API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Add Custom APIs</td>
+                <td style="padding: 12px">Your API Key<br />(Additional Charge)</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Offline Contracting</td>
+                <td style="padding: 12px">❌</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Enterprise -->
+          <div style="display: none">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <tr>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+                <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Enterprise</th>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Flight API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Hotel API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Global Sightseeing API</td>
+                <td style="padding: 12px">✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Add Custom APIs</td>
+                <td style="padding: 12px">Custom APIs ✅</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px">Offline Contracting</td>
+                <td style="padding: 12px">Customized As Per Requirements ✅</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function showTab(index) {
+          var tabs = document.querySelectorAll("#mobile-tabs > div");
+          var buttons = document.querySelectorAll("#tab-buttons button");
+          for (var i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = i === index ? "block" : "none";
+            buttons[i].style.backgroundColor = i === index ? "#323268" : "#eee";
+            buttons[i].style.color = i === index ? "#fff" : "#333";
+          }
+        }
+
+        function toggleMobileView() {
+          const isMobile = window.innerWidth < 768;
+          document.getElementById("tab-buttons").style.display = isMobile ? "flex" : "none";
+          document.getElementById("mobile-tabs").style.display = isMobile ? "block" : "none";
+
+          // Show default tab only if mobile
+          if (isMobile) showTab(0);
+        }
+
+        window.addEventListener("load", toggleMobileView);
+        window.addEventListener("resize", toggleMobileView);
+      </script>
+    </div>
+  </body>
+</html>

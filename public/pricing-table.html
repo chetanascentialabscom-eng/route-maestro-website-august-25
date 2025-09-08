@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="max-width: 900px; margin: auto; padding: 10px">
+      <!-- Tab Buttons (Mobile Only) -->
+      <div id="tab-buttons" style="display: none; margin-bottom: 16px; display: flex; gap: 8px">
+        <button
+          onclick="showTab(0)"
+          style="
+            flex: 1;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: #323268;
+            color: white;
+            border: none;
+            cursor: pointer;
+          "
+        >
+          Trust
+        </button>
+        <button
+          onclick="showTab(1)"
+          style="
+            flex: 1;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: #eee;
+            color: #333;
+            border: none;
+            cursor: pointer;
+          "
+        >
+          Pro
+        </button>
+        <button
+          onclick="showTab(2)"
+          style="
+            flex: 1;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: #eee;
+            color: #333;
+            border: none;
+            cursor: pointer;
+          "
+        >
+          Enterprise
+        </button>
+      </div>
+
+      <!-- Mobile Tab Contents (Hidden on Desktop) -->
+      <div id="mobile-tabs" style="display: none">
+        <!-- Trust -->
+        <div style="display: block">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              margin-bottom: 20px;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <tr>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Trust</th>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Flight API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Hotel API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Sightseeing API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Add Custom APIs</td>
+              <td style="padding: 12px">Your API Key<br />(Additional Charge)</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Offline Contracting</td>
+              <td style="padding: 12px">❌</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Pro -->
+        <div style="display: none">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              margin-bottom: 20px;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <tr>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Pro</th>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Flight API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Hotel API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Sightseeing API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Add Custom APIs</td>
+              <td style="padding: 12px">Your API Key<br />(Additional Charge)</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Offline Contracting</td>
+              <td style="padding: 12px">❌</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Enterprise -->
+        <div style="display: none">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              margin-bottom: 20px;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <tr>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Feature</th>
+              <th style="background: #f5f5f5; text-align: left; padding: 12px; font-size: 16px">Enterprise</th>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Flight API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Hotel API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Global Sightseeing API</td>
+              <td style="padding: 12px">✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Add Custom APIs</td>
+              <td style="padding: 12px">Custom APIs ✅</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px">Offline Contracting</td>
+              <td style="padding: 12px">Customized As Per Requirements ✅</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTab(index) {
+        var tabs = document.querySelectorAll("#mobile-tabs > div");
+        var buttons = document.querySelectorAll("#tab-buttons button");
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].style.display = i === index ? "block" : "none";
+          buttons[i].style.backgroundColor = i === index ? "#323268" : "#eee";
+          buttons[i].style.color = i === index ? "#fff" : "#333";
+        }
+      }
+
+      function toggleMobileView() {
+        const isMobile = window.innerWidth < 768;
+        document.getElementById("tab-buttons").style.display = isMobile ? "flex" : "none";
+        document.getElementById("mobile-tabs").style.display = isMobile ? "block" : "none";
+
+        // Show default tab only if mobile
+        if (isMobile) showTab(0);
+      }
+
+      window.addEventListener("load", toggleMobileView);
+      window.addEventListener("resize", toggleMobileView);
+    </script>
+  </body>
+</html>

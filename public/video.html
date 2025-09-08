@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gradient-bg-new {
+        background: url("your-background.jpg") no-repeat center center;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .video-container {
+        position: relative;
+        width: 780px;
+        max-width: 900px;
+        margin: auto;
+        overflow: visible;
+        height: 300px;
+      }
+
+      .video-container video {
+        position: relative;
+        width: 800px;
+        height: 278px;
+        border-radius: 10px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gradient-bg-new">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="laptop-transparent.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </body>
+</html>
