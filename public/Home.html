@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GV6PK2QSK3"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());  gtag('config', 'G-GV6PK2QSK3');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GV6PK2QSK3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', 'G-GV6PK2QSK3');
+  </script>
 
-<script type="application/ld+json" class="aioseop-schema">
+  <script type="application/ld+json" class="aioseop-schema">
 	{
 	  "@context": "https://schema.org",
 	  "@graph": [
@@ -44,7 +44,7 @@
 	}
 	</script>
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
@@ -70,7 +70,7 @@
         </script>
 
 
-        <script type="application/ld+json">
+  <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "Product",
@@ -98,7 +98,8 @@
   <title>AI-Powered B2B Travel SaaS Platform | RouteMaestro</title>
 
   <meta name="keywords" content="RouteMaestro" />
-  <meta name="description" content="Transform your travel business with our AI-powered travel platform designed to optimize itineraries, enhance client satisfaction, and boost conversions." />
+  <meta name="description"
+    content="Transform your travel business with our AI-powered travel platform designed to optimize itineraries, enhance client satisfaction, and boost conversions." />
   <meta name="author" content="RouteMaestro" />
   <meta name="robots" content="index, follow" />
 
@@ -521,7 +522,6 @@
       }
 
       /* Adjust logo size and text */
-      #footer img {}
 
       #footer p {
         font-size: large !important;
@@ -742,9 +742,9 @@
         margin-top: 20px !important;
       }
 
-      .main {
-        /* margin-top: 10px !important; */
-      }
+      /* .main {
+        margin-top: 10px !important;
+      } */
 
       .mainsectionheight {
         height: 600px !important;
@@ -817,21 +817,21 @@
     }
 
     @media (max-width: 1299px) {
-        .btnnew {
-          /* margin-left: 30px !important; */
-          margin-right: 0px !important;
-          justify-content: center !important;
-          margin-bottom: 20px !important;
-        }
+      .btnnew {
+        /* margin-left: 30px !important; */
+        margin-right: 0px !important;
+        justify-content: center !important;
+        margin-bottom: 20px !important;
       }
+    }
 
-      @media (min-width: 1300px) and (max-width: 1700px) {
-        .btnnew {
-          /* margin-left: 40px !important; */
-          justify-content: center !important;
-          /* margin-bottom: 78px !important; */
-        }
+    @media (min-width: 1300px) and (max-width: 1700px) {
+      .btnnew {
+        /* margin-left: 40px !important; */
+        justify-content: center !important;
+        /* margin-bottom: 78px !important; */
       }
+    }
 
 
     @media screen and (max-width: 768px) {
@@ -1070,9 +1070,9 @@
         margin-top: 20px !important;
       }
 
-      .zig-zag-image{
+      .zig-zag-image {
         width: 80%;
-  height: 80%;
+        height: 80%;
       }
     }
 
@@ -1232,7 +1232,7 @@
         text-align: left !important;
       }
 
-      
+
 
       .gradient-bg-new {
         padding: 0 !important;
@@ -1242,167 +1242,242 @@
       }
 
       .img-left-1,
-        .img-left-2,
-        .img-right-1,
-        .img-right-2 {
-          display: none;
-        }
-
-        .img-center {
-          width: 100% !important;
-          height: auto !important;
-        }
-    }
-
-    @media(max-width:1064px){
-      .land-image {
-        width: 100% !important;
-        height: auto;
+      .img-left-2,
+      .img-right-1,
+      .img-right-2 {
+        display: none;
       }
 
-      .land-image-div {
-        margin: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
+      .img-center {
         width: 100% !important;
-      }
-
-      .gradient-bg-new{
         height: auto !important;
       }
     }
 
-    
+    @media(max-width:1064px) {
+      .land-image {
+        width: 100% !important;
+        height: auto;
+      }
+    }
+
+    /* Enhanced Card Styles */
+    .new-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .new-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .new-card .new-card-inner:hover {
+      transform: rotateY(180deg);
+    }
+
+    .new-card .new-card-front {
+      border: 2px solid #e9ecef !important;
+      transition: all 0.3s ease;
+    }
+
+    .new-card:hover .new-card-front {
+      border: 2px solid #fe6652 !important;
+      box-shadow: 0 12px 35px rgba(254, 102, 82, 0.2) !important;
+    }
+
+    .new-card .new-card-front::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(254, 102, 82, 0.05) 100%);
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+
+    .new-card:hover .new-card-front::before {
+      opacity: 1;
+    }
+
+    .new-card .new-card-back {
+      border: 2px solid #323268 !important;
+    }
+
+    .new-card .flex {
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 1200px) {
+      .new-grid {
+        grid-template-columns: repeat(2, 280px) !important;
+        gap: 15px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .new-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 10px !important;
+      }
+
+      .new-card {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+      }
+    }
+
+    .land-image-div {
+      margin: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+
+    .gradient-bg-new {
+      height: auto !important;
+    }
+
+
     .video-container {
-        position: relative;
-        width: 780px;
-        max-width: 900px;
-        margin: auto;
-        overflow: hidden;
-        height: 300px;
+      position: relative;
+      width: 780px;
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 800px;
+      height: 278px;
+      border-radius: 10px;
+    }
+
+    @media(max-width:768px) {
+      .video-container {
+        width: 100%;
+        height: 230px;
       }
 
       .video-container video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 800px;
-        height: 278px;
-        border-radius: 10px;
+        width: 100%;
+        height: 180px !important;
       }
-
-      @media(max-width:768px){
-        .video-container{
-          width:100%;
-          height: 230px;
-        }
-
-        .video-container video{
-          width: 100%;
-          height: 180px !important;
-        }
-      }
-
-      @media(min-width:1300px)and(max-width:2600px){
-        .header-contact{
-          top: 10px !important;
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 1024px) {
-  .freedom-section {
-    grid-template-columns: 1fr; /* Stack items vertically */
-    width: 90% !important;
-    height: auto !important;
-    gap: 20px;
-  }
-
-  .freedom-section-div {
-    flex-direction: row !important;
-    padding: 16px !important;
-  }
-
-  .freedom-section-img {
-    margin-top: 0 !important;
-  }
-
-  .freedom-section h2 {
-    font-size: 16px !important;
-  }
-
-  .freedom-section-div-para {
-    font-size: 14px !important;
-  }
-
-  .freedom-section-1 {
-    height: auto !important;
-    padding-bottom: 50px;
-  }
-
-  .new-grid{
-    grid-template-columns: repeat(2, 265px) !important;
-  gap:2px !important;
-  }
-}
-
-
-.laptop-container {
-    position: relative;
-    width: 1100px;
-  }
-  
-  .laptop-img {
-    width: 100%;
-    display: block;
-  }
-  
-  .screen-overlay {
-    position: absolute;
-    top: 5.4%;
-    left: 11.8%;
-    width: 76.5%;
-    height: 78%;
-    overflow: hidden;
-    /* border-radius: 10px; */
-  }
-  
-  .slideshow-track {
-    display: flex;
-    height: 100%;
-    width: 100%; /* assuming 3 images */
-    transition: transform 1s ease-in-out;
-  }
-  
-  .slideshow-track img {
-    width: 100%;
-    height: 100%;
-    /* image-rendering: auto; */
-    image-rendering: smooth;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  
-  
-  @media(max-width: 500px) {
-    .custom-mobil-class{
-        height: 30vh !important;
-        width: 100% !important;  
     }
-    .myheadingClass{
+
+    @media(min-width:1300px)and(max-width:2600px) {
+      .header-contact {
+        top: 10px !important;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .freedom-section {
+        grid-template-columns: 1fr;
+        /* Stack items vertically */
+        width: 90% !important;
+        height: auto !important;
+        gap: 20px;
+      }
+
+      .freedom-section-div {
+        flex-direction: row !important;
+        padding: 16px !important;
+      }
+
+      .freedom-section-img {
+        margin-top: 0 !important;
+      }
+
+      .freedom-section h2 {
+        font-size: 16px !important;
+      }
+
+      .freedom-section-div-para {
+        font-size: 14px !important;
+      }
+
+      .freedom-section-1 {
+        height: auto !important;
+        padding-bottom: 50px;
+      }
+
+      .new-grid {
+        grid-template-columns: repeat(2, 265px) !important;
+        gap: 2px !important;
+      }
+    }
+
+
+    .laptop-container {
+      position: relative;
+      width: 1100px;
+    }
+
+    .laptop-img {
+      width: 100%;
+      display: block;
+    }
+
+    .screen-overlay {
+      position: absolute;
+      top: 5.4%;
+      left: 11.8%;
+      width: 76.5%;
+      height: 78%;
+      overflow: hidden;
+      /* border-radius: 10px; */
+    }
+
+    .slideshow-track {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      /* assuming 3 images */
+      transition: transform 1s ease-in-out;
+    }
+
+    .slideshow-track img {
+      width: 100%;
+      height: 100%;
+      /* image-rendering: auto; */
+      image-rendering: smooth;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+
+    @media(max-width: 500px) {
+      .custom-mobil-class {
+        height: 30vh !important;
+        width: 100% !important;
+      }
+
+      .myheadingClass {
         text-align: center !important;
         padding: 0px !important;
         margin-top: 15px;
+      }
     }
-  }
 
-  @media(max-width:768px) {
-    .custom-mobil-class{
-      width: 100% !important;
-      margin-bottom: 0px !important;
+    @media(max-width:768px) {
+      .custom-mobil-class {
+        width: 100% !important;
+        margin-bottom: 0px !important;
+      }
     }
-}
   </style>
 </head>
 
@@ -1441,7 +1516,8 @@
                                 <a class="nav-link dropdown-toggle" href="#"> Features </a>
                                 <ul class="dropdown-menu">
                                   <li>
-                                    <a href="ai-powered-dynamic-packaging" class="dropdown-item">AI Powered Dynamic Packaging </a>
+                                    <a href="ai-powered-dynamic-packaging" class="dropdown-item">AI Powered Dynamic
+                                      Packaging </a>
                                   </li>
                                   <!-- <li>
                                       <a href="integrated-booking-solution.html" class="dropdown-item"
@@ -1460,13 +1536,11 @@
                           </nav>
                         </div>
                       </div>
-                      <a
-                      href="schedule-demo"
-                      class="d-none d-md-block position-relative top-4 btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-2 mb-4"
-                      style="width: 150px !important; font-size: 18px !important;margin-left: 25px;"
-                    >
-                      Schedule A Demo
-                    </a>
+                      <a href="schedule-demo"
+                        class="d-none d-md-block position-relative top-4 btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-2 mb-4"
+                        style="width: 150px !important; font-size: 18px !important;margin-left: 25px;">
+                        Schedule A Demo
+                      </a>
                       <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
                         data-bs-target=".header-nav-main nav">
                         <i class="fas fa-bars"></i>
@@ -1482,11 +1556,11 @@
     </div>
   </header>
 
-  <div role="main" class="main" >
+  <div role="main" class="main">
     <a href="https://wa.me/61412566906" target="_blank" class="book-demo-btn"></a>
 
     <!-- section-1 -->
-   
+
     <!-- <section class="rm-hero-section">
         <div class="rm-hero-container">
           <h1 class="rm-hero-title">Digitize Your Travel Infrastructure With RouteMaestro</h1>
@@ -1498,48 +1572,45 @@
       </section>
        -->
 
-       <section class="rm-hero">
-        <div class="rm-hero-container">
-          
-          <!-- Left: Text -->
-          <div class="rm-hero-content">
-            <h1>Digitize Your Travel Infrastructure <br class="d-none d-md-block"> With RouteMaestro</h1>
-            <p>An AI Powered Dynamic Travel Packaging & A Natural Workflow Booking Platform For Your  Business!</p>
-            <div class="rm-cta-group d-none d-md-flex">
-                <button class="rm-btn rm-btn-demo"><a style="text-decoration: none; color:white;" href="schedule-demo">Schedule A Demo</a></button>
-                <button class="rm-btn rm-btn-trial"><a class="rm-btn-trial" style="text-decoration: none; border: none; " href="Pricing">Start Free Trial</a></button>
-              </div>
-          </div>
-      
-          <!-- Right: Video -->
-          <div class="rm-hero-video">
-            <video
-              src="video/Final Video Hero Section.mp4"
-              autoplay
-              muted
-              loop
-              controls
-              playsinline
-            ></video>
-            
-          </div>
+    <section class="rm-hero">
+      <div class="rm-hero-container">
 
-          <div class="rm-cta-group d-md-none d-flex">
-            <button class="rm-btn rm-btn-demo"><a style="color: white; text-decoration: none !important;" href="schedule-demo">Schedule A Demo</a></button>
-            <button class="rm-btn rm-btn-trial"><a style="color: white; text-decoration: none !important;" href="Pricing">Start Free Trial</a></button>
+        <!-- Left: Text -->
+        <div class="rm-hero-content">
+          <h1>Digitize Your Travel Infrastructure <br class="d-none d-md-block"> With RouteMaestro</h1>
+          <p>An AI Powered Dynamic Travel Packaging & A Natural Workflow Booking Platform For Your Business!</p>
+          <div class="rm-cta-group d-none d-md-flex">
+            <button class="rm-btn rm-btn-demo"><a style="text-decoration: none; color:white;"
+                href="schedule-demo">Schedule A Demo</a></button>
+            <button class="rm-btn rm-btn-trial"><a class="rm-btn-trial" style="text-decoration: none; border: none; "
+                href="Pricing">Start Free Trial</a></button>
           </div>
-      
         </div>
-      </section>
-      
-     
 
-      <!-- <div class="rm-hero-buttons">
+        <!-- Right: Video -->
+        <div class="rm-hero-video">
+          <video src="video/Final Video Hero Section.mp4" autoplay muted loop controls playsinline></video>
+
+        </div>
+
+        <div class="rm-cta-group d-md-none d-flex">
+          <button class="rm-btn rm-btn-demo"><a style="color: white; text-decoration: none !important;"
+              href="schedule-demo">Schedule A Demo</a></button>
+          <button class="rm-btn rm-btn-trial"><a style="color: white; text-decoration: none !important;"
+              href="Pricing">Start Free Trial</a></button>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- <div class="rm-hero-buttons">
         
       </div> -->
-      
 
-  
+
+
 
     <!-- section-1-digitize-the-infrastructure -->
     <!-- <section class="gradient-bg-new" style="
@@ -1612,8 +1683,9 @@
       <div class="pb-5-5 mb-10">
         <div class="row">
           <div class="col text-center">
-            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation" style="letter-spacing: 0.1px;"
-              data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
+            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation"
+              style="letter-spacing: 0.1px;" data-appear-animation="fadeInRightShorterPlus"
+              data-appear-animation-delay="100">
               Leverage <strong> IP-driven Technology </strong> to Maximize Your Travel Business Profits
             </h2>
             <p class="text-color-dark text-5 mb-4 appear-animation" data-appear-animation="fadeInRightShorterPlus"
@@ -1703,8 +1775,9 @@
           <div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5"
             style="display: flex; justify-content: center; align-items: center">
             <img src="img/RM Home Page Icons/Comprehensive Diverse Global Travel Inventory.webp" loading="eager"
-              class="zig-zag-image img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus"
-              data-appear-animation-delay="200" alt="Inventory Database" />
+              class="zig-zag-image img-fluid mb-4 mb-lg-0 appear-animation"
+              data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="200"
+              alt="Inventory Database" />
           </div>
         </div>
 
@@ -1755,17 +1828,17 @@
             </p>
           </div>
           <div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext">
-            <img src="https://i.ibb.co/q8Fs9cL/Itinerary-Image-3.png" alt="Itinerary-Image-1"  
-              class="zig-zag-image img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus"
-              data-appear-animation-delay="200" alt="Time Scheduling" />
+            <img src="https://i.ibb.co/q8Fs9cL/Itinerary-Image-3.png" alt="Itinerary-Image-1"
+              class="zig-zag-image img-fluid mb-4 mb-lg-0 appear-animation"
+              data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="200" alt="Time Scheduling" />
           </div>
         </div>
 
         <div class="row align-items-center mb-5">
           <div class="col-lg-5 order-2 text-center text-lg-start appear-animation nextgentext"
             data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="200">
-            <img src="img/RM Home Page Icons/Secure & Easy Payment Options.webp" class="zig-zag-image img-fluid mb-4 mb-lg-0"
-              alt="Payment Options" />
+            <img src="img/RM Home Page Icons/Secure & Easy Payment Options.webp"
+              class="zig-zag-image img-fluid mb-4 mb-lg-0" alt="Payment Options" />
           </div>
           <div class="col-lg-6 order-1 text-center text-lg-start appear-animation nextgentext"
             data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
@@ -1804,9 +1877,10 @@
       <div style="display: flex; justify-content: center; align-items: center">
         <div class="new-grid" style="
               display: grid;
-              grid-template-columns: repeat(4, 265px);
-
-              gap: 2px;
+              grid-template-columns: repeat(4, 280px);
+              gap: 20px;
+              padding: 20px;
+              justify-content: center;
             ">
           <div class="new-card" style="width: 255px; height: 265px; perspective: 1000px">
             <div class="new-card-inner" style="
@@ -1834,8 +1908,21 @@
                     border: #323268 2px solid;
                   ">
                 <div class="flex flex-column text-center">
-                  <img src="img/RM Home Page Icons/Travel Companies & Agents.png" alt="" height="50px" width="50px" />
-                  <p style="margin-top: 15px;color: #000;">Travel Companies & Agents</p>
+                  <div style="
+                    width: 70px; 
+                    height: 70px; 
+                    background: linear-gradient(135deg, #fe6652, #ff4040);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    box-shadow: 0 4px 15px rgba(254, 102, 82, 0.3);
+                  ">
+                    <img src="img/RM Home Page Icons/Travel Companies & Agents.png" alt="" height="40px" width="40px" />
+                  </div>
+                  <p style="margin: 0; color: #323268; font-weight: 600; line-height: 1.3;">Travel Companies & Agents
+                  </p>
                 </div>
               </div>
               <div class="new-card-back" style="
@@ -1852,13 +1939,13 @@
                     border-radius: 10px;
                     background: #323268;
                     color: white;
-                    padding: 10px;
                     transform: rotateY(180deg);
+                    padding: 10px;
                   ">
                 <div class="text-left flex flex-column justify-content-center align-items-center"
                   style="text-align: left;padding: 7px;">
                   <img src="img/RM Home Page Icons/Travel Companies Agent.png" alt="" height="50px" width="50px"
-                    style="margin-bottom: 10px;">
+                    style="margin-bottom: 10px;margin-top: 10px;">
                   <p style="color: #fff;"> RouteMaestro’s AI generates Door-To-Door Traveller Personalized Trips in
                     under 2 Minutes, reducing
                     operational costs & enhancing Profit Margins for agents.</p>
@@ -1887,14 +1974,26 @@
                     font-weight: bold;
                     border-radius: 10px;
                     background: #fff;
+                    text-align: center;
                     color: #323268;
                     padding: 10px;
                     border: #323268 2px solid;
                   ">
                 <div class="flex flex-column text-center">
-                  <img src="img/RM Home Page Icons/DMO.png" alt="" height="50px" width="50px" class="text-center"
-                    style="margin-top: 10px;" />
-                  <p style="margin-top: 15px;color: #000;"> DMCs / DMOs</p>
+                  <div style="
+                    width: 70px; 
+                    height: 70px; 
+                    background: linear-gradient(135deg, #fe6652, #ff4040);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    box-shadow: 0 4px 15px rgba(254, 102, 82, 0.3);
+                  ">
+                    <img src="img/RM Home Page Icons/DMO.png" alt="" height="40px" width="40px" />
+                  </div>
+                  <p style="margin: 0; color: #323268; font-weight: 600; line-height: 1.3;">DMCs / DMOs</p>
                 </div>
 
 
@@ -1953,8 +2052,20 @@
                     border: #323268 2px solid;
                   ">
                 <div class="flex flex-column text-center">
-                  <img src="img/RM Home Page Icons/Tourism Boards.png" alt="" height="50px" width="50px" />
-                  <p style="margin-top: 15px;color: #000;">Tourism Boards</p>
+                  <div style="
+                    width: 70px; 
+                    height: 70px; 
+                    background: linear-gradient(135deg, #fe6652, #ff4040);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    box-shadow: 0 4px 15px rgba(254, 102, 82, 0.3);
+                  ">
+                    <img src="img/RM Home Page Icons/Tourism Boards.png" alt="" height="40px" width="40px" />
+                  </div>
+                  <p style="margin: 0; color: #323268; font-weight: 600; line-height: 1.3;">Tourism Boards</p>
                 </div>
               </div>
               <div class="new-card-back" style="
@@ -1978,7 +2089,9 @@
                   style="text-align: left;padding: 4px;">
                   <img src="img/RM Home Page Icons/Tourism Board.png" alt="" height="50px" width="50px"
                     style="margin-bottom: 10px;margin-top: 10px;">
-                  <p style="color: #fff;"> Tourism Boards can harness RouteMaestro to boost regional tourism by empowering travel buyers with the tools to create, promote & sell real-time, end-to-end itineraries seamlessly scheduled down to the minute.</p>
+                  <p style="color: #fff;"> Tourism Boards can harness RouteMaestro to boost regional tourism by
+                    empowering travel buyers with the tools to create, promote & sell real-time, end-to-end itineraries
+                    seamlessly scheduled down to the minute.</p>
                 </div>
 
 
@@ -2010,8 +2123,20 @@
                     border: #323268 2px solid;
                   ">
                 <div class="flex flex-column text-center">
-                  <img src="img/homeimagescards/Influencers.png" alt="" height="50px" width="50px" />
-                  <p style="margin-top: 15px;color: #000;">Influencers</p>
+                  <div style="
+                    width: 70px; 
+                    height: 70px; 
+                    background: linear-gradient(135deg, #fe6652, #ff4040);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto 15px;
+                    box-shadow: 0 4px 15px rgba(254, 102, 82, 0.3);
+                  ">
+                    <img src="img/homeimagescards/Influencers.png" alt="" height="40px" width="40px" />
+                  </div>
+                  <p style="margin: 0; color: #323268; font-weight: 600; line-height: 1.3;">Influencers</p>
                 </div>
               </div>
               <div class="new-card-back" style="
@@ -2035,8 +2160,10 @@
                   style="text-align: left;padding: 7px;">
                   <img src="img//homeimagescards/inside.png" alt="" height="50px" width="50px"
                     style="margin-bottom: 10px;margin-top: 10px;">
-                  <p style="color: #fff;">Travel Influencers can use RouteMaestro’s AI to design personalized itineraries that showcase their travel style, highlight favorite spots, and feature curated travel recommendations.
-                </p>
+                  <p style="color: #fff;">Travel Influencers can use RouteMaestro’s AI to design personalized
+                    itineraries that showcase their travel style, highlight favorite spots, and feature curated travel
+                    recommendations.
+                  </p>
                 </div>
 
               </div>
@@ -2058,10 +2185,10 @@
         </script>
       </div>
       <div class="text-center" style="margin-top: 30px;">
-        <a href="schedule-demo"
-          class="btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-3 mt-2" style="width: 150px">
+        <a href="schedule-demo" class="btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-3 mt-2"
+          style="width: 150px">
           Schedule A Demo
-      </a>
+        </a>
       </div>
     </div>
 
@@ -2369,9 +2496,7 @@
 
 
     <!-- section-7-cta-section -->
-    <section
-    id="demoSection"
-    style="
+    <section id="demoSection" style="
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2379,11 +2504,8 @@
       overflow: hidden;
       box-sizing: border-box;
       margin-bottom: 20px;
-    "
-  >
-    <div
-      id="demoContent"
-      style="
+    ">
+      <div id="demoContent" style="
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -2398,19 +2520,15 @@
         position: relative;
         padding: 20px;
         box-sizing: border-box;
-      "
-    >
-      <!-- Left Background Area -->
-      <div
-        style="
+      ">
+        <!-- Left Background Area -->
+        <div style="
           flex: 1;
           min-height: 300px;
-        "
-      ></div>
-  
-      <!-- Right Side CTA -->
-      <div
-        style="
+        "></div>
+
+        <!-- Right Side CTA -->
+        <div style="
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -2423,61 +2541,53 @@
           margin-left: 135px;
           margin-bottom: 30px;
           box-sizing: border-box;
-        "
-      >
-        <h2
-          style="
+        ">
+          <h2 style="
             font-size: 2rem;
             margin-bottom: 10px;
             color: #fff;
             text-align: right;
-          "
-        >
-          See RouteMaestro In Action
-        </h2>
-        <a
-          href="schedule-demo"
-          class="btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-3 mt-2"
-          style="
+          ">
+            See RouteMaestro In Action
+          </h2>
+          <a href="schedule-demo" class="btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-3 mt-2" style="
             width: 150px;
             display: inline-block;
             text-align: center;
-          "
-        >
-          Schedule A Demo
-        </a>
+          ">
+            Schedule A Demo
+          </a>
+        </div>
       </div>
-    </div>
-  
-    <script>
-      function updateSectionHeight() {
-        const section = document.getElementById('demoSection');
-        const content = document.getElementById('demoContent');
-        const screenHeight = window.innerHeight;
-        const optionalHeight = 300; // Optional height for smaller screens
-  
-        section.style.height = screenHeight > 1000 ? '300px' : optionalHeight + 'px';
-  
-        if (window.innerWidth < 768) {
-          section.style.display="none"
-        } else {
-          content.style.flexDirection = 'row';
-          content.style.alignItems = 'center';
-          content.style.backgroundPosition = 'left center';
+
+      <script>
+        function updateSectionHeight() {
+          const section = document.getElementById('demoSection');
+          const content = document.getElementById('demoContent');
+          const screenHeight = window.innerHeight;
+          const optionalHeight = 300; // Optional height for smaller screens
+
+          section.style.height = screenHeight > 1000 ? '300px' : optionalHeight + 'px';
+
+          if (window.innerWidth < 768) {
+            section.style.display = "none"
+          } else {
+            content.style.flexDirection = 'row';
+            content.style.alignItems = 'center';
+            content.style.backgroundPosition = 'left center';
+          }
         }
-      }
-  
-      window.addEventListener('load', updateSectionHeight);
-      window.addEventListener('resize', updateSectionHeight);
-    </script>
-  </section>
+
+        window.addEventListener('load', updateSectionHeight);
+        window.addEventListener('resize', updateSectionHeight);
+      </script>
+    </section>
     <!-- section-7-mobile -->
     <section class="d-md-none d-block"
       style="background-color: #07072c; height: 500px; align-items: center; justify-content: center; padding: 20px">
       <div style="color: white; text-align: center; padding: 20px">
         <h2 style="font-size: 2rem; margin-bottom: 10px; color: #fff">See RouteMaestro In Action</h2>
         <a href="schedule-demo" class="btnnew"
-          
           style="background: #fe6652; color: white; text-decoration: none; border-radius: 5px; transition: 0.3s">Schedule
           A Demo</a>
         <img src="img/RM Home Page Icons/RouteMaestrofigurecta.png" alt="Centered Image"
@@ -2494,13 +2604,8 @@
           <!-- Column 1: Logo -->
           <div class="col-lg-4 mt-5-5" style="margin-top: 25px !important">
             <div style="display: flex; align-items: center; justify-content: center">
-              <img
-                alt="Route Maestro"
-                width="250"
-                height="40"
-                style="margin-bottom: 10px"
-                src="img/RM Home Page Icons/RouteMaestrologo.png"
-              />
+              <img alt="Route Maestro" width="250" height="40" style="margin-bottom: 10px"
+                src="img/RM Home Page Icons/RouteMaestrologo.png" />
               <!-- <p style="margin-left: 7px; font-size: x-large; color: white">ROUTEMAESTRO</p> -->
             </div>
             <!-- <div style="align-items: center; justify-content: center; margin-top: 20px; margin-left: 75px">
@@ -2522,38 +2627,22 @@
             <h3 class="font-weight-bold" style="color: #a733ff; margin-left: 25px">Pages</h3>
             <ul class="list list-unstyled">
               <li style="margin-left: 30px">
-                <a
-                  href="Home"
-                  class="text-color-grey text-color-hover-primary"
-                  style="color: white !important; font-size: 16px"
-                  >Home</a
-                >
+                <a href="Home" class="text-color-grey text-color-hover-primary"
+                  style="color: white !important; font-size: 16px">Home</a>
               </li>
               <li style="margin-left: 30px">
-                <a
-                  href="ai-trip-planner.html"
-                  class="text-color-grey text-color-hover-primary"
-                  style="color: white !important; font-size: 15px"
-                  >AI Powered Dynamic Packaging </a
-                >
+                <a href="ai-trip-planner.html" class="text-color-grey text-color-hover-primary"
+                  style="color: white !important; font-size: 15px">AI Powered Dynamic Packaging </a>
               </li>
               <li style="margin-left: 30px">
-                <a
-                  href="Pricing"
-                  class="text-color-grey text-color-hover-primary"
-                  style="color: white !important; font-size: 16px"
-                  >Pricing</a
-                >
+                <a href="Pricing" class="text-color-grey text-color-hover-primary"
+                  style="color: white !important; font-size: 16px">Pricing</a>
               </li>
               <li style="margin-left: 30px">
-                <a
-                  href="schedule-demo"
-                  class="text-color-grey text-color-hover-primary"
-                  style="color: white !important; font-size: 16px"
-                  >Schedule A Demo</a
-                >
+                <a href="schedule-demo" class="text-color-grey text-color-hover-primary"
+                  style="color: white !important; font-size: 16px">Schedule A Demo</a>
               </li>
-             
+
             </ul>
           </div>
           <!-- Column 3: Catch Us On Social Media -->
@@ -2571,17 +2660,17 @@
                 <a href="terms-conditions">
                   <p class="text-center text-3 mb-0 text-white mx-3" style="font-size: 16px !important">
                     Terms & Conditions
-                  </p></a
-                >
+                  </p>
+                </a>
               </li>
               <li style="margin-left: -20px">
                 <a href="#">
                   <p class="text-center text-3 mb-0 text-white mx-3" style="font-size: 16px !important">
                     Sitemap
-                  </p></a
-                >
+                  </p>
+                </a>
               </li>
-             
+
             </ul>
             <!-- <ul class="social-icons social-icons-clean social-icons-medium" style="color: white">
               <li class="social-icons-instagram">
@@ -2673,66 +2762,66 @@
     });
   </script>
 
-<script>
-  gsap.registerPlugin(ScrollTrigger);
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
 
-  // Create a timeline
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#heroSection",
-      start: "top top",
-      end: "+=3000", // scroll distance
-      scrub: true,
-      pin: true,
-      markers: false // set true for debugging
+    // Create a timeline
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#heroSection",
+        start: "top top",
+        end: "+=3000", // scroll distance
+        scrub: true,
+        pin: true,
+        markers: false // set true for debugging
+      }
+    });
+
+    // Add zoom-in animations one by one
+    tl.to("#img-left-1", { scale: 1.3, duration: 1 });
+    tl.to("#img-left-2", { scale: 1.3, duration: 1 });
+    tl.to("#img-center", { scale: 1.3, duration: 1 });
+    tl.to("#img-right-1", { scale: 1.3, duration: 1 });
+    tl.to("#img-right-2", { scale: 1.3, duration: 1 });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script>
+    const video = document.getElementById("myVideo");
+    const zoomSlider = document.getElementById("zoomSlider");
+
+    zoomSlider.addEventListener("input", () => {
+      const scale = zoomSlider.value;
+      video.style.transform = `scale(${scale})`;
+    });
+  </script>
+
+  <script>
+    let current = 0;
+    const track = document.getElementById('slideshow-track');
+    const slidesCount = track.children.length;
+
+    function slide() {
+      current++;
+      track.style.transition = 'transform 1s ease-in-out';
+      track.style.transform = `translateX(-${current * 100}%)`;
+
+      // When it reaches the cloned slide
+      if (current === slidesCount - 1) {
+        setTimeout(() => {
+          // Instantly jump to real first slide without animation
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(0)';
+          current = 0;
+        }, 1000); // wait for slide animation to complete
+      }
     }
-  });
 
-  // Add zoom-in animations one by one
-  tl.to("#img-left-1", { scale: 1.3, duration: 1 });
-  tl.to("#img-left-2", { scale: 1.3, duration: 1 });
-  tl.to("#img-center", { scale: 1.3, duration: 1 });
-  tl.to("#img-right-1", { scale: 1.3, duration: 1 });
-  tl.to("#img-right-2", { scale: 1.3, duration: 1 });
-</script>
+    setInterval(slide, 3000);
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<script>
-  const video = document.getElementById("myVideo");
-  const zoomSlider = document.getElementById("zoomSlider");
-
-  zoomSlider.addEventListener("input", () => {
-    const scale = zoomSlider.value;
-    video.style.transform = `scale(${scale})`;
-  });
-</script>
-
-<script>
-let current = 0;
-const track = document.getElementById('slideshow-track');
-const slidesCount = track.children.length;
-
-function slide() {
-  current++;
-  track.style.transition = 'transform 1s ease-in-out';
-  track.style.transform = `translateX(-${current * 100}%)`;
-
-  // When it reaches the cloned slide
-  if (current === slidesCount - 1) {
-    setTimeout(() => {
-      // Instantly jump to real first slide without animation
-      track.style.transition = 'none';
-      track.style.transform = 'translateX(0)';
-      current = 0;
-    }, 1000); // wait for slide animation to complete
-  }
-}
-
-setInterval(slide, 3000);
-
-</script>
+  </script>
 </body>
 
 </html>
