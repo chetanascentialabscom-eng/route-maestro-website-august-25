@@ -1381,9 +1381,15 @@
         padding: 20px 15px !important;
       }
       
-      .btnnew {
+      .btnnew, .demo-submit-btn {
         width: 100% !important;
         margin-top: 15px !important;
+        padding: 12px 20px !important;
+        font-size: 16px !important;
+      }
+      
+      .demo-button-container {
+        text-align: center !important;
       }
       
       /* WhatsApp button mobile positioning */
@@ -1418,6 +1424,43 @@
       .header-logo img {
         max-width: 150px !important;
         height: auto !important;
+      }
+    }
+    
+    /* Simple Demo Button Styling */
+    .demo-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .demo-submit-btn {
+      background-color: #fe6652 !important;
+      color: white !important;
+      border: none !important;
+      border-radius: 6px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+    
+    .demo-submit-btn:hover {
+      background-color: #e2472b !important;
+    }
+    
+    /* Responsive button sizing */
+    @media (min-width: 769px) {
+      .demo-submit-btn {
+        width: 220px !important;
+        padding: 14px 28px !important;
+        font-size: 16px !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .demo-submit-btn {
+        width: 100% !important;
+        padding: 12px 20px !important;
+        font-size: 16px !important;
       }
     }
   </style>
@@ -1628,11 +1671,13 @@
             </div>
           </label>
 
-          <button type="submit" data-link="https://calendly.com/arham-airnetmarketing1/30min"
-            class="openCalendly btnnew btn border-0 font-weight-bold text-5-6 btn-px-5 py-3 mt-2"
-            style="width: 150px; margin-top: 15px">
-            Schedule A Demo
-          </button>
+          <div style="text-align: center; margin-top: 20px;">
+            <button type="submit" data-link="https://calendly.com/arham-airnetmarketing1/30min"
+              class="openCalendly btnnew btn border-0 font-weight-bold"
+              style="width: 100px; padding: 24px 24px; font-size: 16px; border-radius: 6px; background-color: #fe6652; color: white; margin: 0 auto; display: inline-block;">
+              Schedule A Demo
+            </button>
+          </div>
           <div id="calendlyModal" style="
                 display: none;
                 position: fixed;

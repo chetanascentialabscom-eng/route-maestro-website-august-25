@@ -4,6 +4,19 @@ Disallow: /api/
 Disallow: /login/
 Disallow: /register/
 Disallow: /private/
-Disallow: /*.html$
+Disallow: /vendor/
+Disallow: /master/
+Disallow: /ajax/
+Disallow: /php/
+Disallow: /pricing1.html
+Disallow: /pricing2.html
+Disallow: /pricing3.html
+Disallow: /pricing-table.html
+Disallow: /video.html
+Disallow: /Home-old.html
 Allow: /
+Allow: /*.css
+Allow: /*.js
+Allow: /img/
+
 Sitemap: https://routemaestro.com/sitemap.xml
