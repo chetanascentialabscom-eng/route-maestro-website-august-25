@@ -1,0 +1,58 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/public/index.html"
+    },
+    {
+      "source": "/index",
+      "destination": "/public/index.html"
+    },
+    {
+      "source": "/Home",
+      "destination": "/public/Home.html"
+    },
+    {
+      "source": "/Privacy",
+      "destination": "/public/Privacy.html"
+    },
+    {
+      "source": "/Pricing",
+      "destination": "/public/Pricing.html"
+    },
+    {
+      "source": "/schedule-demo",
+      "destination": "/public/schedule-demo.html"
+    },
+    {
+      "source": "/terms-conditions",
+      "destination": "/public/terms-conditions.html"
+    },
+    {
+      "source": "/ai-powered-dynamic-packaging",
+      "destination": "/public/ai-powered-dynamic-packaging.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
