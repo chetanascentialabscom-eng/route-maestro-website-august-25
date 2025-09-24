@@ -1159,55 +1159,8 @@
         height: 24px !important;
         font-size: 12px !important;
         display: flex;
-
-.demo-hero-section {
-  padding: 80px ;
-  text-align: center;
-  background-color: #fff;
-  min-height: 25vh;
-  background-size: auto 100%;
-}
-
-/* Desktop and larger screens */
-@media (min-width: 1200px) {
-  .form-container {
-    max-width: 1200px !important;
-    margin-top: -30px !important;
-  }
-}
-
-/* Tablet/Landscape mode adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .demo-hero-section {
-    background-size: auto 90% !important;
-    min-height: 30vh !important;
-  }
-}
-
-/* Mobile hero section adjustments */
-@media (max-width: 768px) {
-  .demo-hero-section {
-    padding: 15px !important;
-    min-height: 10vh !important;
-    background-image: none !important;
-    background-color: #f8f9fa !important;
-  }
-  
-  .form-container {
-    margin-top: -5px !important;
-    min-height: 300px !important;
-  }
-}
-        background: white;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        margin-top: 10px;
-      }
-      
-      .header-nav-main nav ul {
-        flex-direction: column;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
       }
       
       .header-nav-main nav ul li {
@@ -1239,12 +1192,12 @@
     /* Form Section Responsive Styles */
     @media (max-width: 768px) {
       .form-container {
-        margin-top: -20px !important;
-        margin-bottom: 30px !important;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
         flex-direction: column !important;
         margin-left: 15px !important;
         margin-right: 15px !important;
-        padding: 15px !important;
+        padding: 12px !important;
       }
 
       .form-container>div {
@@ -1254,22 +1207,24 @@
       }
 
       .form-container>div:first-child {
-        min-height: 250px !important;
-        margin-bottom: 20px;
-        padding: 20px 15px !important;
+        min-height: 220px !important;
+        margin-bottom: 15px;
+        padding: 18px 15px !important;
       }
       
       .form-container>div:first-child h2 {
-        font-size: 24px !important;
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
       }
       
       .form-container>div:first-child p {
-        font-size: 16px !important;
-        padding: 15px 0 !important;
+        font-size: 15px !important;
+        padding: 10px 0 !important;
+        margin-bottom: 8px !important;
       }
       
       .form-container>div:last-child {
-        padding: 30px 20px !important;
+        padding: 20px 15px !important;
       }
     }
 
@@ -1283,20 +1238,20 @@
       font-size: 2.5rem;
       font-weight: 700;
       color: #1f1f47;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .demo-hero-subtext {
       font-size: 1.125rem;
       color: #666;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .demo-hero-description {
       font-size: 1rem;
       color: #555;
-      margin-bottom: 30px;
-      padding: 0 10px;
+      margin-bottom: 20px;
+      padding: 0 5px;
     }
 
     .demo-hero-button {
@@ -1320,22 +1275,46 @@
 
     /* Responsive Styles */
     @media (max-width: 768px) {
+      .demo-hero-section {
+        background-size: auto 220% !important;
+        background-position: center !important;
+        padding: 15px 20px !important;
+        min-height: 15vh !important;
+      }
+      
+      .demo-hero-container {
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 5px !important;
+      }
+      
       .demo-hero-title {
-        font-size: 2rem;
+        font-size: 2rem !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+        color: #1f1f47 !important;
+        font-weight: 700 !important;
       }
 
       .demo-hero-subtext {
         font-size: 1rem;
+        margin-bottom: 8px !important;
       }
 
       .demo-hero-description {
         font-size: 0.95rem;
+        margin-bottom: 15px !important;
+        padding: 0 !important;
       }
     }
 
     @media (max-width: 480px) {
       .demo-hero-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+        color: #1f1f47 !important;
+        font-weight: 700 !important;
       }
 
       .demo-hero-button {
@@ -1344,19 +1323,31 @@
       }
       
       .demo-hero-section {
-        padding: 5px 15px !important;
-        min-height: 5vh !important;
-        background-image: none !important;
-        background-color: #f8f9fa !important;
+        padding: 10px 15px !important;
+        min-height: 12vh !important;
+        background-image: url(./img/scheduleimages/Frame\ 1618871206\ \(1\).png) !important;
+        background-size: auto 180% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #fff !important;
+      }
+      
+      .demo-hero-container {
+        text-align: center !important;
+        padding: 5px !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        margin: 0 15px !important;
+        box-shadow: none !important;
+        position: relative !important;
+        z-index: 2 !important;
       }
       
       .form-container {
-        margin-top: -5px !important;
-        min-height: 300px !important;
-      }
-      
-      .form-container {
-        margin-top: -5px !important;
+        margin-top: 10px !important;
         margin-left: 10px !important;
         margin-right: 10px !important;
         padding: 10px !important;
@@ -1364,8 +1355,9 @@
       }
       
       .form-container>div:first-child {
-        min-height: 200px !important;
+        min-height: 180px !important;
         padding: 15px 10px !important;
+        margin-bottom: 15px !important;
       }
       
       .form-container>div:first-child h2 {
@@ -1378,7 +1370,7 @@
       }
       
       .form-container>div:last-child {
-        padding: 20px 15px !important;
+        padding: 15px 10px !important;
       }
       
       .btnnew, .demo-submit-btn {
@@ -1606,8 +1598,11 @@
       </section> -->
 
     <section class="demo-hero-section"
-      style="background-image: url(./img/scheduleimages/Frame\ 1618871206\ \(1\).png) ; background-size: auto 200%; background-position: center; background-repeat: no-repeat; min-height: 25vh; padding: 40px;">
-      <!-- Hero section with just airplane background image -->
+      style="background-image: url(./img/scheduleimages/Frame\ 1618871206\ \(1\).png) ; background-size: auto 200%; background-position: center; background-repeat: no-repeat; min-height: 25vh; padding: 40px; display: flex; align-items: center; justify-content: center;">
+      <!-- Hero section with airplane background image and heading -->
+      <div class="demo-hero-container text-center">
+        <h1 class="demo-hero-title">Schedule A Demo</h1>
+      </div>
     </section>
 
     <section class="container form-container"
