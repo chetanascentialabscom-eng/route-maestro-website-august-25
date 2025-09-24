@@ -1527,6 +1527,33 @@
         margin-bottom: 0px !important;
       }
     }
+
+    /* Navbar styling to match dropdown text font weight */
+    .nav-pills .nav-link {
+      font-weight: bold !important;
+    }
+
+    /* Dropdown items styling to match navbar items with maximum specificity */
+    #header .header-nav-main nav > ul > li.dropdown > ul.dropdown-menu > li > a.dropdown-item {
+      font-weight: bold !important;
+      font-size: inherit !important;
+      color: inherit !important;
+    }
+
+    /* Additional specific targeting */
+    .header-nav-main .dropdown-menu .dropdown-item {
+      font-weight: bold !important;
+    }
+
+    /* Even more specific for our exact structure */
+    .nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item {
+      font-weight: bold !important;
+    }
+
+    /* Ultimate specificity - this should definitely work */
+    body #header .header-nav-main nav ul.nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item {
+      font-weight: bold !important;
+    }
   </style>
 </head>
 
