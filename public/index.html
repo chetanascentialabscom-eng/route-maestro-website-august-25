@@ -1437,6 +1437,92 @@
       height: auto !important;
     }
 
+    /* Lazy Scroll Styles */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .lazy-scroll-element {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lazy-scroll-element.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .lazy-scroll-fade {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .lazy-scroll-fade.visible {
+      opacity: 1;
+    }
+
+    .lazy-scroll-slide-left {
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lazy-scroll-slide-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .lazy-scroll-slide-right {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lazy-scroll-slide-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .lazy-scroll-scale {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lazy-scroll-scale.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .lazy-scroll-stagger {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .lazy-scroll-stagger.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .lazy-scroll-stagger:nth-child(1) { transition-delay: 0.1s; }
+    .lazy-scroll-stagger:nth-child(2) { transition-delay: 0.2s; }
+    .lazy-scroll-stagger:nth-child(3) { transition-delay: 0.3s; }
+    .lazy-scroll-stagger:nth-child(4) { transition-delay: 0.4s; }
+    .lazy-scroll-stagger:nth-child(5) { transition-delay: 0.5s; }
+
+    /* Progress bar for scroll */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(to right, #fe6652, #ff4040);
+      z-index: 9999;
+      transition: width 0.1s ease;
+    }
 
     .video-container {
       position: relative;
@@ -1573,6 +1659,9 @@
 </head>
 
 <body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <header id="header"
     data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-70px', 'stickyChangeLogo': true}"
     style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)">
@@ -1667,7 +1756,7 @@
         <!-- Left: Text -->
         <div class="rm-hero-content">
           <h1>Digitize Your Travel Infrastructure <br class="d-none d-md-block"> With RouteMaestro</h1>
-          <p>An AI Powered Dynamic Travel Packaging & A Natural Workflow Booking Platform For Your Business!</p>
+          <p>An AI Powered Dynamic Travel Planning, Packaging & Booking Platform For Your Business!</p>
           <div class="rm-cta-group d-none d-md-flex">
             <button class="rm-btn rm-btn-demo"><a style="text-decoration: none; color:white;"
                 href="schedule-demo.html">Schedule A Demo</a></button>
@@ -1759,7 +1848,7 @@
     </section> -->
 
     <!--section-2-maximize-travel-business-profits -->
-    <section class="section bg-transparent position-relative border-0 m-0 p-0">
+    <section class="section bg-transparent position-relative border-0 m-0 p-0 lazy-scroll-element">
       <div style="
             height: 4px;
             width: 70px;
@@ -1772,7 +1861,7 @@
       <div class="pb-5-5 mb-10">
         <div class="row">
           <div class="col text-center">
-            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation"
+            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation lazy-scroll-fade"
               style="letter-spacing: 0.1px;" data-appear-animation="fadeInRightShorterPlus"
               data-appear-animation-delay="100">
               Leverage <strong> IP-driven Technology </strong> to Maximize Your Travel Business Profits
@@ -1786,22 +1875,22 @@
 
         <section class="travel-business-profits-section mt-5">
           <div class="dashboard-wrapper">
-            <div class="card">
+            <div class="card lazy-scroll-stagger">
               <div class="card-icon">
                 <img src="img/RM Home Page Icons/Frame 1618871179.png" alt="Profitability Icon" />
               </div>
             </div>
-            <div class="card">
+            <div class="card lazy-scroll-stagger">
               <div class="card-icon">
                 <img src="img/RM Home Page Icons/Frame 1618871178.png" alt="Expense Icon" />
               </div>
             </div>
-            <div class="card">
+            <div class="card lazy-scroll-stagger">
               <div class="card-icon">
                 <img src="img/RM Home Page Icons/Frame 1618871177.png" alt="Input Time Icon" />
               </div>
             </div>
-            <div class="card">
+            <div class="card lazy-scroll-stagger">
               <div class="card-icon">
                 <img src="img/RM Home Page Icons/Frame 1618871176.png" alt="Client Conversion Icon" />
               </div>
@@ -1825,7 +1914,7 @@
                   margin: 50px auto 10px;
                   border-radius: 2px;
                 "></div>
-            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation"
+            <h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation lazy-scroll-scale"
               data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">
               Next Gen <strong> Travel Technology Solution </strong> <br> For Travel Business
             </h2>
@@ -1861,7 +1950,7 @@
               and start generating personalised trips, instantly.
             </p>
           </div>
-          <div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5"
+          <div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 lazy-scroll-slide-right"
             style="display: flex; justify-content: center; align-items: center">
             <img src="img/RM Home Page Icons/Comprehensive Diverse Global Travel Inventory.webp" loading="eager"
               class="zig-zag-image img-fluid mb-4 mb-lg-0 appear-animation"
@@ -1971,7 +2060,7 @@
               padding: 20px;
               justify-content: center;
             ">
-          <div class="new-card" style="width: 255px; height: 265px; perspective: 1000px">
+          <div class="new-card lazy-scroll-stagger" style="width: 255px; height: 265px; perspective: 1000px">
             <div class="new-card-inner" style="
                   width: 100%;
                   height: 100%;
@@ -2043,7 +2132,7 @@
               </div>
             </div>
           </div>
-          <div class="new-card" style="width: 255px; height: 265px; perspective: 1000px">
+          <div class="new-card lazy-scroll-stagger" style="width: 255px; height: 265px; perspective: 1000px">
             <div class="new-card-inner" style="
                   width: 100%;
                   height: 100%;
@@ -2116,7 +2205,7 @@
               </div>
             </div>
           </div>
-          <div class="new-card" style="width: 255px; height: 265px; perspective: 1000px">
+          <div class="new-card lazy-scroll-stagger" style="width: 255px; height: 265px; perspective: 1000px">
             <div class="new-card-inner" style="
                   width: 100%;
                   height: 100%;
@@ -2187,7 +2276,7 @@
               </div>
             </div>
           </div>
-          <div class="new-card" style="width: 255px; height: 265px; perspective: 1000px">
+          <div class="new-card lazy-scroll-stagger" style="width: 255px; height: 265px; perspective: 1000px">
             <div class="new-card-inner" style="
                   width: 100%;
                   height: 100%;
@@ -2293,7 +2382,7 @@
           border-radius: 2px;
         "></div>
 
-      <h2 class="text-color-dark text-8 mb-5-5 mt-2 text-center">
+      <h2 class="text-color-dark text-8 mb-5-5 mt-2 text-center lazy-scroll-scale">
         <strong>Freedom to<strong> Choose</strong>,
 
           Flexibility to
@@ -2439,7 +2528,7 @@
             border-radius: 2px;
           "></div>
 
-      <h2 class="mb-5-5 mt-2 text-center" style="font-size: 36px; color: #323268">
+      <h2 class="mb-5-5 mt-2 text-center lazy-scroll-fade" style="font-size: 36px; color: #323268">
         Frequently Asked Questions
       </h2>
 
@@ -2901,6 +2990,135 @@
 
     setInterval(slide, 3000);
 
+  </script>
+
+  <!-- Lazy Scroll JavaScript -->
+  <script>
+    // Lazy Scroll Implementation
+    document.addEventListener('DOMContentLoaded', function() {
+      // Scroll Progress Bar
+      const scrollProgress = document.getElementById('scrollProgress');
+      
+      function updateScrollProgress() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = scrollPercent + '%';
+      }
+
+      window.addEventListener('scroll', updateScrollProgress);
+
+      // Intersection Observer for Lazy Scroll Elements
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            
+            // Add staggered animation for child elements
+            const staggerElements = entry.target.querySelectorAll('.lazy-scroll-stagger');
+            staggerElements.forEach((element, index) => {
+              setTimeout(() => {
+                element.classList.add('visible');
+              }, index * 100);
+            });
+          }
+        });
+      }, observerOptions);
+
+      // Observe all lazy scroll elements
+      const lazyElements = document.querySelectorAll('.lazy-scroll-element, .lazy-scroll-fade, .lazy-scroll-slide-left, .lazy-scroll-slide-right, .lazy-scroll-scale, .lazy-scroll-stagger');
+      
+      lazyElements.forEach(element => {
+        observer.observe(element);
+      });
+
+      // Smooth scroll for navigation links
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Enhanced card hover effects
+      const cards = document.querySelectorAll('.card, .new-card');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-10px) scale(1.02)';
+          this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0) scale(1)';
+          this.style.boxShadow = '';
+        });
+      });
+
+      // Smooth reveal animation for sections
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll('.lazy-scroll-element:not(.visible)');
+        
+        reveals.forEach(element => {
+          const windowHeight = window.innerHeight;
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < windowHeight - elementVisible) {
+            element.classList.add('visible');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', revealOnScroll);
+      
+      // Initial check for elements already in view
+      revealOnScroll();
+
+      // Performance optimization: throttle scroll events
+      let ticking = false;
+      
+      function throttledScroll() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            updateScrollProgress();
+            revealOnScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      
+      window.addEventListener('scroll', throttledScroll);
+    });
+
+    // Additional smooth animations for page load
+    window.addEventListener('load', function() {
+      // Trigger initial animations
+      setTimeout(() => {
+        const initialElements = document.querySelectorAll('.lazy-scroll-element');
+        initialElements.forEach((element, index) => {
+          if (element.getBoundingClientRect().top < window.innerHeight) {
+            setTimeout(() => {
+              element.classList.add('visible');
+            }, index * 100);
+          }
+        });
+      }, 300);
+    });
   </script>
 </body>
 
