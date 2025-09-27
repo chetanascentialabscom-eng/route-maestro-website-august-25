@@ -1,3 +1,52 @@
+/* Smooth Momentum Scrolling Implementation */
+html, body {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    scroll-padding-top: 80px;
+}
+
+/* Smooth scrolling for all scrollable containers */
+* {
+    scroll-behavior: smooth;
+}
+
+/* iOS momentum scrolling for touch devices */
+.scroll-container,
+.modal-body,
+.dropdown-menu,
+.nav-tabs-content {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html, body, * {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Smooth scroll for anchor links */
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
+/* Force hide any scroll-to-top buttons */
+.scroll-to-top,
+button[class*="scroll"],
+button[class*="top"],
+[class*="go-to-top"],
+[class*="back-to-top"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+
 /* Mobile Navigation Font Size Enhancement */
 @media (max-width: 991px) {
     /* Main navigation items */
