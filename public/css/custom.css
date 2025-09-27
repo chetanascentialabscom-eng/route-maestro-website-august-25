@@ -1,0 +1,66 @@
+/* Mobile Navigation Font Size Enhancement */
+@media (max-width: 991px) {
+    /* Main navigation items */
+    #header .header-nav-main nav > ul li a {
+        font-size: 16px !important;
+        font-weight: 500;
+        line-height: 24px !important;
+        padding: 10px 8px !important;
+    }
+    
+    /* Comprehensive dropdown menu items targeting - All possible structures */
+    #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a,
+    #header .header-nav-main nav > ul li.dropdown .dropdown-menu li a,
+    #header .header-nav-main nav ul.nav-pills li.dropdown ul.dropdown-menu li a,
+    #header .header-nav-main .dropdown-menu .dropdown-item,
+    #header .header-nav-main .dropdown-menu li a,
+    .header-nav-main .dropdown-menu a.dropdown-item,
+    .dropdown-menu .dropdown-item {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        line-height: 24px !important;
+        padding: 10px 15px !important;
+    }
+    
+    /* Mega dropdown menu items - Higher specificity */
+    #header .header-nav-main nav > ul > li.dropdown-mega .dropdown-mega-sub-nav > li > a,
+    #header .header-nav-main nav > ul li.dropdown-mega .dropdown-mega-sub-nav > li > a {
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        line-height: 24px !important;
+        padding: 10px 15px !important;
+    }
+    
+    /* Ultimate specificity for dropdown items - Override any styles */
+    body #header .header-nav-main nav ul li.dropdown ul.dropdown-menu li a.dropdown-item,
+    body #header .header-nav-main nav > ul > li.dropdown > ul.dropdown-menu > li > a.dropdown-item,
+    html body #header .header-nav-main nav ul.nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item,
+    html body .header-nav-main .dropdown-menu .dropdown-item,
+    html body #header .dropdown-menu a {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        line-height: 24px !important;
+        padding: 10px 15px !important;
+    }
+    
+    /* Maximum specificity override for AI Powered Dynamic Packaging link */
+    html body #header .header-nav-main nav ul.nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item[href="ai-powered-dynamic-packaging"][style],
+    html body #header .header-nav-main nav ul.nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item[href="ai-powered-dynamic-packaging"],
+    body #header .header-nav-main nav ul li.dropdown ul.dropdown-menu li a[href="ai-powered-dynamic-packaging"],
+    html body #header .dropdown-menu a[href="ai-powered-dynamic-packaging"],
+    html body .dropdown-menu .dropdown-item[href="ai-powered-dynamic-packaging"],
+    body .dropdown-item[href="ai-powered-dynamic-packaging"] {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 26px !important;
+        padding: 12px 15px !important;
+    }
+    
+    /* Additional ultra-specific selector to override inline styles */
+    html body div#header div.header-nav-main nav.collapse ul.nav.nav-pills li.dropdown ul.dropdown-menu li a.dropdown-item[href="ai-powered-dynamic-packaging"] {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 26px !important;
+        padding: 12px 15px !important;
+    }
+}
